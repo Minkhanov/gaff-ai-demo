@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Демо AI-консультанта для gaff.agency</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg:#ffffff; --ink:#111111; --muted:#5f5f5f; --accent:#ffd400; --line:#e7e7e7; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--ink); font:16px/1.55 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  .wrap { max-width:880px; margin:0 auto; padding:56px 16px 120px; }
+  .tag { display:inline-block; background:var(--accent); padding:4px 10px; border-radius:999px; font-size:13px; font-weight:600; }
+  h1 { font-size:clamp(28px, 5vw, 44px); line-height:1.12; margin:18px 0 14px; letter-spacing:-0.02em; }
+  p.lead { color:var(--muted); font-size:18px; max-width:640px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px; margin-top:36px; }
+  .card { border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .card b { display:block; margin-bottom:6px; }
+  .card code { background:#f6f6f6; padding:1px 6px; border-radius:6px; font-size:14px; }
+  .hint { margin-top:36px; padding:16px 18px; border-left:4px solid var(--accent); background:#fffbe6; border-radius:8px; }
+  footer { margin-top:48px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <span class="tag">Демо для тендера Workspace № 18981</span>
+  <h1>AI-консультант для сайта gaff.agency</h1>
+  <p class="lead">Агент в Yandex AI Studio на модели DeepSeek. Отвечает только по сайту gaff.agency: поиск ограничен
+    этим доменом. Цены не выдумывает и просит контакт для связи с командой.</p>
+
+  <div class="grid">
+    <div class="card"><b>Спросите про услугу</b><code>Делаете голосового AI-оператора?</code></div>
+    <div class="card"><b>Попросите кейс</b><code>Покажите кейс с колл-центром</code></div>
+    <div class="card"><b>Спросите цену</b><code>Сколько стоит чат-бот и за сколько сделаете?</code></div>
+    <div class="card"><b>Вопрос без ответа</b><code>Интегрируете с SAP за неделю?</code></div>
+  </div>
+
+  <div class="hint">Кнопка чата — в правом нижнем углу. В демо нет базы знаний RAG, так и указано в условиях тендера:
+    на вопросы о сроках и деньгах бот отвечает, что детали уточнит команда, и просит контакт.</div>
+
+  <footer>Тестовая страница, не индексируется. Материалы сайта — gaff.agency.</footer>
+</main>
+
+<!-- Виджет Yandex AI Studio (канал aac40n649qr3aip0j8tp, доступ ограничен доменами minkhanov.github.io и gaff.agency) -->
+<script src="https://widget.aistudio.yandexcloud.net/scripts/widget-loader.js?channel-id=aac40n649qr3aip0j8tp" async></script>
+
+</body>
+</html>
