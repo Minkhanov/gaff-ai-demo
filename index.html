@@ -42,7 +42,16 @@
 </main>
 
 <!-- Виджет Yandex AI Studio (канал aac40n649qr3aip0j8tp, доступ ограничен доменами minkhanov.github.io и gaff.agency) -->
-<script src="https://widget.aistudio.yandexcloud.net/scripts/widget-loader.js?channel-id=aac40n649qr3aip0j8tp" async></script>
+<script>
+window.AiStudioChatWidgetConfig = {
+  channelId: 'aac40n649qr3aip0j8tp',
+  locale: 'ru',
+  position: 'bottom-right',
+  chatTrigger: { animated: true, appearance: { backgroundColor: "#111111" } },
+  chat: { appearance: { accentColor: "#111111" } },
+};
+</script>
+<script src="https://widget.aistudio.yandexcloud.net/scripts/widget-loader.js" async></script>
 
 </body>
 </html>
